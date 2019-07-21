@@ -1,0 +1,124 @@
+﻿<!-- Main -->
+<div id="main" class="wrapper style1">
+    <div class="container">
+        <header class="major">
+            <h2>Administración de Empresas</h2>
+        </header>
+
+        <div class="row gtr-uniform gtr-50">
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtRazonSocial" id="txtRazonSocial" ng-model="vm.empresa.razonSocial" value="" placeholder="Razón Social" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtNombreComercial" id="txtNombreComercial" ng-model="vm.empresa.nombreComercial" value="" placeholder="Nombre Comercial" />
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <input type="text" name="txtNit" id="txtNit" ng-model="vm.empresa.nit" value="" placeholder="NIT" />
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input type="text" name="txtDigitosVerificacion" id="txtDigitosVerificacion" ng-model="vm.empresa.digitoVerificacion" value="" placeholder="Dig. Verificación" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtRegimenContributivo" id="txtRegimenContributivo" ng-model="vm.empresa.regimenContributivo" value="" placeholder="Régimen Contributivo" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtDireccion" id="txtDireccion" ng-model="vm.empresa.direccion" value="" placeholder="Dirección" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtCiudad" id="txtCiudad" ng-model="vm.empresa.ciudad" value="" placeholder="Ciudad" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtTelefono" id="txtTelefono" ng-model="vm.empresa.telefono" value="" placeholder="Teléfono" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtFax" id="txtFax" ng-model="vm.empresa.fax" value="" placeholder="Fax" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="file" class="button icon fa-download" name="fileLogo" id="fileLogo" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtSitioWeb" id="txtSitioWeb" ng-model="vm.empresa.sitioWeb" value="" placeholder="Sitio Web" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtEmail" id="txtEmail" ng-model="vm.empresa.email" value="" placeholder="Email" />
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="password" name="txtPassword1" id="txtPassword1" ng-model="vm.empresa.password" value="" placeholder="Contraseña" />
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="password" name="txtPassword2" id="txtPassword2" value="" placeholder="Verificar Contraseña" />
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <input type="text" name="txtResolucion" id="txtResolucion" value="" placeholder="Número Resolución" />
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input class="datepicker" type="text" id="txtFechaInicioResolucion" name="txtFechaInicioResolucion" value="" placeholder="Fecha Inicial" />
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input class="datepicker" type="text" id="txtFechaFinResolucion" name="txtFechaFinResolucion" value="" placeholder="Fecha Fin">
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input type="text" name="txtNumeroFacturaInicial" id="txtNumeroFacturaInicial" value="" placeholder="Número Fact. Inicial" />
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input type="text" name="txtNumeroFacturaFinal" id="txtNumeroFacturaFinal" value="" placeholder="Número Fact. Final" />
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="radio" id="rdEstadoActivo" name="rdEstado" checked>
+                <label for="rdEstadoActivo">Activo</label>
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="radio" id="rdEstadoInactivo" name="rdEstado">
+                <label for="rdEstadoInactivo">Inactivo</label>
+            </div>
+            <div class="col-6 col-12-xsmall"></div>
+        </div>
+
+        </br>
+        </br>
+
+        <header class="major">
+            <h2>Formato de Impresión</h2>
+        </header>
+
+        <div class="row gtr-uniform gtr-50">
+            <div class="col-4 col-12-xsmall">
+                <center>
+                    <input type="radio" id="rdFormatoImpresion1" name="rdFormatoImpresion" checked>
+                    <label for="rdFormatoImpresion1">Formato 1</label>
+                    <img src="../images/formato-avatar.png" alt="imgFormatoAvatar">
+                </center>
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <center>
+                    <input type="radio" id="rdFormatoImpresion2" name="rdFormatoImpresion">
+                    <label for="rdFormatoImpresion2">Formato 2</label>
+                    <img src="../images/formato-avatar.png" alt="imgFormatoAvatar">
+                </center>
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <center>
+                    <input type="radio" id="rdFormatoImpresion3" name="rdFormatoImpresion">
+                    <label for="rdFormatoImpresion3">Formato 3</label>
+                    <img src="../images/formato-avatar.png" alt="imgFormatoAvatar">
+                </center>
+            </div>
+
+            <div class="col-12 col-12-xsmall"></div>
+            <div class="col-12 col-12-xsmall"></div>
+
+            <div class="col-4"></div>
+            <div class="col-2">
+                <center>
+                    <input type="submit" value="Guardar" ng-click="vm.guardar()" class="primary" />
+                </center>
+            </div>
+            <div class="col-2">
+                <center>
+                    <input type="submit" value="Cancelar" class="primary" />
+                </center>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>

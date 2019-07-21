@@ -1,0 +1,8 @@
+﻿<div>
+    <h1>Empresas</h1>
+    <div class="col-md-12" ng-repeat="empresa in vm.empresas">
+        {{empresa.nit}} - {{empresa.razonSocial}}
+    </div>
+
+    <button value="Crear nueva empresa" ng-click="vm.crear()">Crear</button>
+</div>

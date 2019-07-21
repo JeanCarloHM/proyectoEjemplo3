@@ -1,0 +1,8 @@
+﻿<div>
+    <h1>Clientes</h1>
+    <div class="col-md-12" ng-repeat="cliente in vm.clientes">
+        {{cliente.nit}} - {{cliente.razonSocial}}
+    </div>
+
+    <button value="Crear nuevo cliente" ng-click="vm.crear()">Crear</button>
+</div>

@@ -1,0 +1,56 @@
+﻿<!-- Main -->
+<div id="main" class="wrapper style1">
+    <div class="container">
+        <header class="major">
+            <h2>Administración de Clientes</h2>
+        </header>
+
+        <div class="row gtr-uniform gtr-50">
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtRazonSocial" id="txtRazonSocial" ng-model="vm.cliente.razonSocial" value="" placeholder="Razón Social" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtNombreComercial" id="txtNombreComercial" ng-model="vm.cliente.nombreComercial" value="" placeholder="Nombre Comercial" />
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <input type="text" name="txtNit" id="txtNit" ng-model="vm.cliente.nit" value="" placeholder="NIT" />
+            </div>
+            <div class="col-2 col-12-xsmall">
+                <input type="text" name="txtDigitosVerificacion" id="txtDigitosVerificacion" ng-model="vm.cliente.digitoVerificacion" value="" placeholder="Dig. Verificación" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtDireccion" id="txtDireccion" ng-model="vm.cliente.direccion" value="" placeholder="Dirección" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtCiudad" id="txtCiudad" ng-model="vm.cliente.ciudad" value="" placeholder="Ciudad" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtTelefono" id="txtTelefono" ng-model="vm.cliente.telefono" value="" placeholder="Teléfono" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="txtEmail" id="txtEmail" ng-model="vm.cliente.email" value="" placeholder="Email" />
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="radio" id="rdEstadoActivo" name="rdEstado" checked>
+                <label for="rdEstadoActivo">Activo</label>
+            </div>
+            <div class="col-3 col-12-xsmall">
+                <input type="radio" id="rdEstadoInactivo" name="rdEstado">
+                <label for="rdEstadoInactivo">Inactivo</label>
+            </div>
+
+            <div class="col-4"></div>
+            <div class="col-2">
+                <center>
+                    <input type="submit" value="Guardar" ng-click="vm.guardar()" class="primary" />
+                </center>
+            </div>
+            <div class="col-2">
+                <center>
+                    <input type="submit" value="Cancelar" ng-click="vm.cancelar()" class="primary" />
+                </center>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>

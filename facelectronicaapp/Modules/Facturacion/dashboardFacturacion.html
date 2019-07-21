@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Landed by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="Facturacion">
+<head>
+    <title>Facturación Electrónica - Facturación</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="#">Facturación Electrónica - ContSolution</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Administración Clientes</a></li>
+                    <li><a href="#">Consultas</a></li>
+                    <li><a href="#">Facturación</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div ng-view></div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; ContSolution. All rights reserved.</li>
+                <li>Design: <a href="http://www.dimensiontecnologica.com">Dimensión Tecnológica</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts Diseño -->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../../assets/js/jquery.dropotron.min.js"></script>
+    <script src="../../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../../assets/js/browser.min.js"></script>
+    <script src="../../assets/js/breakpoints.min.js"></script>
+    <script src="../../assets/js/util.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Scripts Calendario -->
+    <script src="../../assets/datepicker/js/main.js"></script>
+    <script src="../../assets/datepicker/js/bootstrap-datepicker.js"></script>
+    <script>
+        $(function () {
+            $('.datepicker').datepicker();
+        });
+    </script>
+
+    <!-- Scripts Generales -->
+    <script src="../../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../Scripts/angular.min.js"></script>
+    <script src="../../Scripts/angular-route.min.js"></script>
+    <script src="../../Scripts/angular-cookies.min.js"></script>
+    <script src="../../Scripts/prototypes.js"></script>
+
+    <!-- Scripts Facturación Electrónica -->
+    <script src="facturacion.module.js"></script>
+    <script src="../Utils/utils.module.js"></script>
+
+    <!-- Servicios -->
+    <script src="../Utils/services/utils.service.js"></script>
+    <script src="../Utils/services/routeConfig.service.js"></script>
+    <!--<script src="Modules/Utils/services/tmpData.service.js"></script>-->
+    <!-- Controladores -->
+    <script src="clientes/clientes.controller.js"></script>
+    <script src="clientes/clientes.edit.controller.js"></script>
+</body>
+</html>
